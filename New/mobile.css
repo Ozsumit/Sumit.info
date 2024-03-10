@@ -1,0 +1,113 @@
+body{
+    margin: 1vw;
+}
+#Home{
+    background: url(llline.svg);
+    height: 80vh;
+    background-repeat: no-repeat;
+
+}
+.homes{
+    
+    flex-direction: column;
+    .art{
+        img{
+        
+        }display: none;
+    }
+
+.bs
+
+{
+    margin-left: 10vw;
+    h1{
+
+    width: 100vw;
+}}}
+#Work{
+    background-size: 50rem;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    .maincontent{
+        display: flex;
+        margin-left: 0;
+        .cards{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            width: 25rem;
+        }
+    }
+}
+
+.workbs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    img{
+        display: none;
+    }
+    h1{
+        width: 100vw;
+        margin: 0;
+    }
+}
+.float{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    z-index: 0;
+    padding-left: 0;
+    margin-top: 20vh;
+    .about{
+        width: 80vw;
+        height: 100vh;
+    }
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 20vh;
+    background-size: 30rem;
+    background: url(bhsd.svg);
+    .logo{
+    h1{
+        font-size: 1.3rem;
+    }
+}
+    .contactitems{
+        display: flex;
+        flex-direction: row;
+        .items{
+           
+            i{
+                margin-top: 10px;
+            }
+            h3{
+                font-size: 1.2rem;
+                margin-top: 0;
+                display: none;
+            }
+            a{
+            height: 3rem;
+            width: 3rem; background-color: transparent;
+            border: none;
+            
+        }}
+        
+    }
+}
+#About{
+    background-size: 30rem;
+    background-attachment: fixed;
+    margin-bottom: 10vh;
+}

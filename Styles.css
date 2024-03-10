@@ -346,3 +346,20 @@ h3{
 }
   }
 }
+.new{
+  z-index: 10;
+  position: fixed;
+  width: 100vw; 
+  background-color: rgba(107, 107, 255, 0.269);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  height: 5vh; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: center;
+  a
+  {
+ width: 100vw;
+ text-decoration: none;
+ color: #fff;
+}
+ 
+}
