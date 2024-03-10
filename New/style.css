@@ -126,7 +126,7 @@ body{
 .cards{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
     .card1{
         display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
