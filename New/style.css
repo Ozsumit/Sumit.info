@@ -87,9 +87,11 @@ body{
         span{
            
           
-            background:linear-gradient(to right,hsl(37, 99%, 67%),hsl(316, 73%, 52%));
+            background:linear-gradient(to right,#FFD966,hsl(316, 73%, 52%) );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent ;
+            text-shadow: 0px 0px 50px rgba(41, 41, 41, 0.21);
+            padding: 1%;
         }
     }
     }
