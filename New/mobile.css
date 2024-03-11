@@ -3,8 +3,10 @@ body{
 }
 #Home{
     background: url(llline.svg);
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
+    display: flex ;
+    align-items: center;
 
 }
 .homes{
@@ -20,7 +22,11 @@ body{
 
 {
     margin-left: 10vw;
+    span{
+        text-shadow: 0px 0px 20px hsla(328, 100%, 42%, 0.306);
+    }
     h1{
+        margin-top: 0;
 
     width: 100vw;
 }}}
@@ -110,4 +116,8 @@ body{
     background-size: 30rem;
     background-attachment: fixed;
     margin-bottom: 10vh;
+}
+.card1{
+    height: 20rem;
+    width: 20rem;
 }
