@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-signin-client_id" content="<--((##YOUR_CLIENT_ID.apps.googleusercontent.com##))-->">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Rixie Registration Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  
+  </style>
+</head>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
+</script>
+
+<body>
+
+  <div class="main-container">
+    <section>
+      <div class="login-section">
+        <h1>Already Registered?</h1>
+        <p>If you have a Rixie account, please log in.</p>
+        <div>
+          <input type="tel" placeholder="Phone Number*" class="Inputfld1">
+          <input type="password" placeholder="Password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="Inputfld2">
+        </div>
+        <div class="required-fields">
+          <p>* required fields</p>
+          <a href="#" class="frgtpass">Forgot password?</a>
+        </div>
+        <div class="btns">
+          <button type="submit">LOGIN</button>
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          <button class="signupBTN"><a href="Signup.html"> SignUp</a></button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="signup-section">
+        <h1>Sign up</h1>
+        <p>Please enter the following information to create your account</p>
+        <div class="signupsec">
+          <select class="dropdown">
+            <option selected disabled value=""><span style="color:897b7b ;">Salutations</span></option>
+            <option value="1">Mr</option>
+            <option value="2">Mrs</option>
+            <option value="3">Ms</option>
+          </select>
+          
+          
+          <input type="text" placeholder="First name*" id="first-name-field">
+          <input type="text" placeholder="Last name*" id="last-name-field">
+          <input type="email" placeholder="email address*" id="signup-email-field">
+          <input type="password" placeholder="Password*" id="signup-password-field" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+          <input type="password" placeholder="Confirm Password*" id="confirm-password-field"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+        </div>
+        <div class="signup-footer">
+         
+          <button class="buttonreg" type="submit" >REGISTER</button>
+        </div>
+        <div class="yapagreemnt">
+          
+          <p><input type="checkbox" class="chckbx">From now on I will receive the Rixie Newsletter with selected fashion
+            offers. If I do not wish to receive the newsletter, I can unsubscribe at any
+            time free of charge at privacy@rixie.com.</p>
+          <p>I agree that Rixies may insert analytical web beacons into the newsletter and create a personalized user profile based on my purchase and usage behavior, including sending a notification when I have placed something in the shopping cart. Further details can be found in our <a href="#">Privacy Policy</a>, clause 5. I understand that I can revoke my consent at any time by emailing <a href="#">privacy@Rixie.com</a>.</p>
+        </div>
+      </div>
+</body>
+
+</html>
