@@ -28,7 +28,7 @@ body{
     align-items: center;
     width: 95vw;
     height: 10vh;
-    padding-left:5vw
+    padding-left:5vw;
   a{
     display: flex;
     justify-content: center;
