@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="14990782f626308686.svg">
+    <title>Repository</title>
+    
+</head>
+<body>
+
+    <div class="navigation">
+
+        <div class="nav">
+
+            <a href="#Home">Home</a>
+            <a href="contact.html">Contact </a>
+        </div>
+    </div>
+    <div id="main">    <div class="logosec">
+        <img src="14990782626308686(1).svg" alt="">
+    </div>
+    <h3>The site where you can find notes,pdfs,cover page,assignment details and other necessary files</h3>
+    <div class="reposec">
+        <div class="items" id="WmadCOverpage"><a href="files/WMAD-Report-cover-page-final.pdf" download="">WMAD-Cover-Page</a></div>
+        <div class="items" id="CaCovepage"><a href="files/CAO-Final-Report-cover-page (1).pdf" download="">CA-Cover-Page</a></div>
+        <div class="items" id=###"><a href="files/English.pdf" download="">English-CoverPage</a></div>
+        <div style="display: none;" class="items" id=###"><a href="files/Deadlock.sumit.pdf" download="Deadlock">Deadlock.sumit</a></div>
+        <div class="items" id=###"><a href="files/GroupD-OS.pdf" download="Cover-OS">Group'D' OS</a></div>
+        <div class="items" id=###"><a href="GroupG,D-OSa.pdf">Group'G/E' OS</a></div>
+         <div class="items" id=###"><a href="files/GroupB-OS.pdf" download="Cover-OS">Group'B' OS    </a></div>
+         <div class="items" id=###"><a href="Group A.pdf" download="Group'A' OS">Group'A' OS    </a></div>
+         <div class="items" id=###"><a href="files/groupF.pdf" download="Group F-OS">Group'F' OS    </a></div>
+       
+    </div>
+
+
+
+
+    <h4><a href="https://Sumit.info.np">Contact me to request updates</a></h4>
+</div>
+<h4 class="txt">Enter the code word to reveal the hidden items.</h4>
+    <div id="brba"><img id="saymyname" src="waltwhite-breakingbad.gif" alt="">
+        <img id="urgdmrght" src="breaking-bad-walter-white.gif" style="display: none;" alt=""></div>
+    <input type="text" name="backdoor" id="bckdor" value=" "  placeholder="Say my name.">
+    <a href="#Dev" >
+        <button id="HIDDEV" disabled onclick="show()">Reveal</button></a>
+
+
+<div id="Dev" class="reposecDev">
+      
+    <div class="items" id=###"><a href="gggg.pdf" download="Cover-OS">Sumit   </a></div>
+    <div class="items" id=###"><a href="Suman.docx" download="Cover-OS">Suman   </a></div>
+    <div class="items" id=###"><a href="Deadlock_1.docx" download="Cover-OS">Riyaj    </a></div>
+    <div class="items" id=###"><a href="Deadlock.docx" download="Cover-OS">diya    </a></div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+
+
+
+
+   document.getElementById("bckdor").value="";
+const inputBox = document.getElementById("bckdor");
+const revealButton = document.getElementById("HIDDEV");
+const secretWord = "Vasu"; // Replace with your desired secret word
+function show(){
+    var x = document.getElementById("Dev");
+  if (x.style.display === "none") {
+    x.style.display = "grid";
+  } else {
+    x.style.display = "none";
+  }
+} 
+document.getElementById("Dev").style.display = "none";
+   document.getElementById("bckdor").value="";
+inputBox.addEventListener("keyup", function() {
+  if (inputBox.value === secretWord) {
+    revealButton.disabled = false; 
+    revealButton.style.pointerEvents="all";
+    document.getElementById("saymyname").style.display="none";
+    document.getElementById("urgdmrght").style.display="block";
+    // Enable button if secret word is entered
+  } else {
+    revealButton.disabled = true;
+    document.getElementById("Dev").style.display = "none";
+    document.getElementById("saymyname").style.display="block";
+    document.getElementById("urgdmrght").style.display="none";
+     // Disable button otherwise
+  }
+});
+</script>
+</html>
